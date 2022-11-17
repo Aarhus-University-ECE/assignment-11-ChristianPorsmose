@@ -13,14 +13,16 @@ extern "C"
 
 TEST_CASE("sumtail")
 {
-    // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumtail(10,0) == 55); //1 + 2 + 3 + 4 ... + 10 = 55
+    REQUIRE(sumtail(1,0) == 1); //base case
+
 }
 
 TEST_CASE("sumwhile")
 {
-    // Add the tests for excercise 3 "sumwhile" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumwhile(10) == 55); //1 + 2 + 3 + 4 ... + 10 = 55
+    REQUIRE(sumwhile(1) == 1); //base case
+
 }
 
 TEST_CASE("sumn")
@@ -31,9 +33,12 @@ TEST_CASE("sumn")
 }
 
 TEST_CASE("fib")
-{
-   // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+{ 
+    REQUIRE(fib(0,0,1)==0);//base case
+    REQUIRE(fib(5,0,1)==5); //fib(5,0,1) = 5;
+    REQUIRE(fib(8,0,1)==21); //fib(8) = 0  1  1  2  3  5  8  13 21, 21 is the 8'th number;
+    REQUIRE(fib(1,0,1) == 1);  //base case
 }
+
 
 
